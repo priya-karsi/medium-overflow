@@ -1,0 +1,13 @@
+.btn{
+    border-radius: 30px;
+}
+
+.btn-custom{
+    background: #ff895d;
+    border: 1px solid #ff895d;
+    color: #fff;
+}
+
+.card-title{
+    color: #000000
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faDashboard, faUserGraduate,faChalkboardTeacher, faRulerVertical, faBookReader, faSearch, faComment, faBell, faSignOut } from '@fortawesome/free-solid-svg-icons';
+import { faDashboard, faUserGraduate,faChalkboardTeacher, faRulerVertical, faBookReader, faSearch, faComment, faBell, faSignOut, faClose, faBlog, faContactBook, faHome, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,17 +8,22 @@ import { faDashboard, faUserGraduate,faChalkboardTeacher, faRulerVertical, faBoo
 })
 export class SidenavComponent implements OnInit {
   icons ={
-    dashboardIcon: faDashboard,
-    userGraduateIcon: faUserGraduate,
-    teacherIcon: faChalkboardTeacher,
-    stdIcon: faRulerVertical,
-    subIcon: faBookReader,
+    homeIcon: faHome,
+    blogIcon: faBlog,
+    questionIcon: faQuestionCircle,
+    contactIcon:faContactBook,
     searchIcon: faSearch,
     comment: faComment,
     bell: faBell,
-    signout: faSignOut
+    signout: faSignOut,
+    crossIcon: faClose
 
   }
+
+
+  // maintain track of whether sidenav is open or close
+  sideNavCollapse = true;
+  navbarCollapse = true;
   constructor() { }
 
   ngOnInit(): void {
